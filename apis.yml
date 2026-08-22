@@ -1,0 +1,115 @@
+name: Red5 Live Streaming Solutions and Infrastructure
+description: >-
+  Red5 provides real-time video/audio streaming infrastructure via open-source Red5, self-hosted Red5 Pro (with Stream
+  Manager 2.0), the managed Red5 Cloud PaaS, and client SDKs. It exposes fully documented REST APIs (Red5 Pro Server API
+  and Stream Manager 2.0 API) that run on customer-deployed instances or Red5 Cloud, plus an agent-native llms.txt.
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/red5-live-streaming-solutions-and-infrastructure/refs/heads/main/apis.yml
+created: '2026-08-22'
+modified: '2026-08-22'
+specificationVersion: '0.21'
+tags:
+  - video-streaming
+  - live-streaming
+  - real-time
+  - webrtc
+  - low-latency
+  - media-server
+  - streaming-paas
+  - video-infrastructure
+  - cdn
+  - broadcasting
+  - surveillance-public-safety
+  - gaming-esports
+  - rest-api
+  - llms-txt
+  - open-source
+apis:
+  - name: Red5 Pro Server API
+    description: >-
+      REST/JSON API embedded in the Red5 Pro media server providing server info/ping/statistics, applications, streams,
+      recorded content (VOD), shared objects, client control, and log access. Base URL is instance-specific
+      (http://{host}:5080/api/v1/); authenticated via static access token plus IP allowlist.
+    humanURL: https://www.red5.net/docs/red5-pro/development/api/server/
+    baseURL: http://{host}:5080/api/v1/
+    tags:
+      - video-streaming
+      - live-streaming
+      - real-time
+      - webrtc
+      - low-latency
+      - media-server
+      - streaming-paas
+      - video-infrastructure
+      - cdn
+      - broadcasting
+      - surveillance-public-safety
+      - gaming-esports
+      - rest-api
+      - llms-txt
+      - open-source
+    properties:
+      - type: Documentation
+        url: https://www.red5.net/docs/red5-pro/development/api/server/
+  - name: Stream Manager 2.0 API
+    description: >-
+      REST/JSON API used by both Red5 Pro clusters and Red5 Cloud for Auth, Admin, Proxy, Streams, Streams Provision,
+      Streams Mixer, and Scheduling NodeGroups. Base URL is instance-specific ({streamManagerHost}/as/v1/). Auth via
+      Basic login returning a JWT bearer token. Ships an OpenAPI/Swagger UI per instance at
+      {streamManagerHost}/swagger-ui.html.
+    humanURL: https://www.red5.net/docs/red5-pro/development/api/stream-manager-2-0/
+    baseURL: https://{streamManagerHost}/as/v1/
+    tags:
+      - video-streaming
+      - live-streaming
+      - real-time
+      - webrtc
+      - low-latency
+      - media-server
+      - streaming-paas
+      - video-infrastructure
+      - cdn
+      - broadcasting
+      - surveillance-public-safety
+      - gaming-esports
+      - rest-api
+      - llms-txt
+      - open-source
+    properties:
+      - type: Documentation
+        url: https://www.red5.net/docs/red5-pro/development/api/stream-manager-2-0/
+  - name: Red5 Agent-Native Surface
+    description: >-
+      Publicly hosted llms.txt providing a structured index of Red5 products, use cases, and documentation for AI
+      agents.
+    humanURL: https://www.red5.net/developer-zone/
+    baseURL: https://www.red5.net
+    tags:
+      - video-streaming
+      - live-streaming
+      - real-time
+      - webrtc
+      - low-latency
+      - media-server
+      - streaming-paas
+      - video-infrastructure
+      - cdn
+      - broadcasting
+      - surveillance-public-safety
+      - gaming-esports
+      - rest-api
+      - llms-txt
+      - open-source
+    properties:
+      - type: LLMsTxt
+        url: https://www.red5.net/llms.txt
+      - type: Documentation
+        url: https://www.red5.net/docs/red5-pro/development/api/
+maintainers:
+  - FN: Red5 Live Streaming Solutions and Infrastructure
+    url: https://www.red5.net
+generated:
+  by: apis.io/add
+  model: claude-opus-4-8
+  confidence: 85
+  at: '2026-08-22T23:05:54.179Z'
