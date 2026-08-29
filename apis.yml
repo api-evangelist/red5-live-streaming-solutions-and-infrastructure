@@ -5,6 +5,17 @@ description: >-
   and Stream Manager 2.0 API) that run on customer-deployed instances or Red5 Cloud, plus an agent-native llms.txt.
 url: >-
   https://raw.githubusercontent.com/api-evangelist/red5-live-streaming-solutions-and-infrastructure/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 created: '2026-08-22'
 modified: '2026-08-22'
 specificationVersion: '0.21'
